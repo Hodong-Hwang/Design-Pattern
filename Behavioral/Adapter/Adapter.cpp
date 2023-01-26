@@ -120,15 +120,15 @@ void ex2()
     };
 
   std::vector<Point> points;
-  for (auto& o : vectorObjects)
-   {
-     for (auto& l : *o)
+    for (auto& o : vectorObjects)
     {
-       LineToPointAdapter lpo{ l };
-       for (auto& p : lpo)
-        points.push_back(p);
-     }
- }
+        for (auto& l : *o)
+        {
+            LineToPointAdapter lpo{ l };
+            for (auto& p : lpo)
+            points.push_back(p);
+        }
+    }
     
 
 
