@@ -3,8 +3,9 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/**"
-                "${INCLUDE}/**"
+                "${workspaceFolder}/**",
+                "${INCLUDE}/**",
+                "${BOOST_INCLUDE}/**"
             ],
             "defines": [
                 "_DEBUG",
