@@ -1,5 +1,8 @@
 #include <iostream>
 #include <string>
+#include <vector>
+#include <memory>
+#include <algorithm>
 
 using namespace std;
 struct Creature
@@ -12,12 +15,22 @@ struct Creature
           defense(defense)
     {
     }
+
     friend ostream &operator<<(ostream &os, const Creature &obj)
     {
         return os
                << "name: " << obj.name
                << " attack: " << obj.attack
-               << " defense: " << obj.defense;
+               << " defense: " << obj.defense 
+               << "\n";
+    }
+    friend ostream &operator<<(ostream &os, const std::vector<Creature> &objs)
+    {
+        for (const auto& obj : objs)
+        {
+            os << obj;
+        }
+        return os;
     }
 };
 
@@ -30,6 +43,7 @@ protected:
 public:
     explicit CreatureModifier(Creature &creature)
         : creature(creature) {}
+
 
     void add(CreatureModifier *cm)
     {
@@ -84,12 +98,14 @@ int main()
     DoubleAttackModifier r1_2{goblin};
     IncreaseDefenseModifier r2{goblin};
 
+    std::vector <Creature> Creatures;
     root.add(&r1);
     root.add(&r1_2);
     root.add(&r2);
 
     root.handle();
-
-    cout << goblin << endl;
+    Creatures.emplace_back(goblin);
+    Creatures.push_back({"Goblin2", 1, 1});
+    cout << Creatures ;
     // 출력 결과 "name: Goblin attack: 4 defense: 1"
 }
