@@ -82,6 +82,9 @@
         "*.ipp": "cpp",
         "unordered_set": "cpp",
         "rope": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "*.inc": "cpp",
+        "random": "cpp",
+        "iomanip": "cpp"
     }
 }
