@@ -34,3 +34,9 @@ class ElementT {
     public:
 typedef typename C::value_type Type;
 };
+
+template <typename T, typename C>
+T sum_of_elements (C const& c);
+
+template<typename C>
+typename ElementT<C>::Type sum_of_elements (C const& c);

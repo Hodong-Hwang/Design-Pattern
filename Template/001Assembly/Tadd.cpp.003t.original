@@ -1,0 +1,32 @@
+
+;; Function int add(int, int) (null)
+;; enabled by -tree-original
+
+
+return <retval> = a + b;
+
+
+;; Function int main() (null)
+;; enabled by -tree-original
+
+
+<<cleanup_point <<< Unknown tree: expr_stmt
+  (void) square<int> (3) >>>>>;
+<<cleanup_point <<< Unknown tree: expr_stmt
+  (void) square<double> (3.29999999999999982236431605997495353221893310547e+0) >>>>>;
+return <retval> = 0;
+
+
+;; Function T square(T) [with T = int] (null)
+;; enabled by -tree-original
+
+
+return <retval> = a * a;
+
+
+;; Function T square(T) [with T = double] (null)
+;; enabled by -tree-original
+
+
+return <retval> = a * a;
+
