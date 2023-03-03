@@ -51,8 +51,8 @@ int main ()
 {
     TextView tv("World");
     vector<Shape*>v;
-new ObjectAdapter(&tv);
-    v.push_back();
+
+    v.push_back(new ObjectAdapter(&tv));
     v.push_back(new Text("hello"));
 
     return 0;

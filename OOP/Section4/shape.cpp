@@ -11,6 +11,7 @@ class TextView
     void Show() {std::cout <<data <<std::endl;}
 };
 
+// Adapater Pattern another class
 class Text : public TextView, public Shape
 {
     public:

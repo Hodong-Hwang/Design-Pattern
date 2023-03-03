@@ -25,4 +25,6 @@ int main ()
 
     s.push_front(10);
     s.push_front(20);
+    s.push_front(30);
+    
 }

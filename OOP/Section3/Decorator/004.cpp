@@ -44,7 +44,7 @@ class RightMissile  : public IDecorator
     void Fire()
     {
         IDecorator::Fire();
-        cout << "Right Missile : >>>>>>>>>>>" <<endl;
+        cout << "Right Missile :<<<<<<<<<<" <<endl;
     }
 };
 int main ()

@@ -30,7 +30,7 @@ template <typename T, typename ThreadModel = NoLock> class List
 
 
 
-List<int MutexLock> s;
+List<int, MutexLock> s;
 int main ()
 {
 

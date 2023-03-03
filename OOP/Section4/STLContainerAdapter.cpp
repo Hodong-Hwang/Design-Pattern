@@ -5,6 +5,9 @@
 
 using namespace std;
 
+// stack inline -> inline 치환으로 수정.. 
+// 코드 메모리 증가가 없음
+
 template <typename T> 
 class stackS: private list<T>
 {
