@@ -23,5 +23,4 @@ class Mouse : public SingleTon<Mouse>
 int main ()
 {
     Mouse& m1=Mouse::getInstance();
-
 }

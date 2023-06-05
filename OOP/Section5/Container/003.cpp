@@ -37,5 +37,5 @@ int main ()
     slist<int> s;
     s.push_front(10);
     s.push_front(20);
-    int n = s.front();
+    int n = s.front();  
 }

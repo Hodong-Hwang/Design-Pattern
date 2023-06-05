@@ -26,8 +26,6 @@ class Table : public Subject
 {
     int data;
 public:
-
-
     void SetData(int d )
     {
         data = d;
@@ -35,7 +33,6 @@ public:
     }
 
 };
-
 
 class PieGraph : public IGraph
 {

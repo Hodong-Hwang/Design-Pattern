@@ -14,6 +14,7 @@ class Cursor
     private :
     Cursor(){}
     public:
+    // lazy initialization
     static Cursor& getInstance()
     {
         static Cursor instance;

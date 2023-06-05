@@ -27,7 +27,6 @@ int main ()
 {
     Cursor& c1 =Cursor::getInstance();
     Cursor& c2 =Cursor::getInstance();
-
     std:: cout << &c1 << std::endl;
     std:: cout << &c2 << std::endl;
 

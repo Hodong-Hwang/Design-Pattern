@@ -3,7 +3,7 @@
 using namespace std;
 
 
-// Single Tone  재사용 기술
+// SingleTon  재사용 기술
 
 #define MAKE_SINGLETON(classname)               \
 private :                                       \
@@ -24,7 +24,7 @@ class Cursor
     MAKE_SINGLETON(Cursor)
 };
 
-class Mouse
+class Mouse : public Cursor
 {
 
 };
