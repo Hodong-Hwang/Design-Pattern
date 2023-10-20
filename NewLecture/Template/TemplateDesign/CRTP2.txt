@@ -1,0 +1,2 @@
+// DDP Singleton_gen02 참조.
+CRTP를 활용한 Singleton은 매우 유명한 패턴임.
