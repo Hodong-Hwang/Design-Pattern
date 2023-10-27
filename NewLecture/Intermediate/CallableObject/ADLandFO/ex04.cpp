@@ -25,6 +25,6 @@ int main()
 
     less<void> f3;
     less<> f4;
-    less f5;
+    less f5; //std::les
 
 }

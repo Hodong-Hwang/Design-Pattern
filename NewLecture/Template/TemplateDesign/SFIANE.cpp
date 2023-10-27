@@ -17,7 +17,7 @@
 
 
 template <typename T>
-typename T::type foo(T t)
+typename T::type foo(T t) // int::type >> Compile error가 발생하지 않음. 3번째 함수를 찾아서 사용함.
 {
     std::cout << "T "<< std::endl;
 }

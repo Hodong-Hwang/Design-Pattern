@@ -13,13 +13,13 @@ bool cmp2 (T a, T b)
 }
 
 template <typename T>
-void sort (T* x, T sz, bool(*cmp)(T,T))
+void sort (T* x, T sz, bool(*cmp)(T,T)=cmp1<T>)
 {
     for (int i =0 ;  i<sz-1; i++)
     {
         for (int j=i+1; j<sz; j++)
         {
-            if(cmp(x[i],x[j]))
+            if(cmp(x[i],x[j])) // 비교 함수를 부르기 때문에 느려짐.
             {
                 std::swap(x[i],x[j]);
             }

@@ -4,6 +4,8 @@
 // global = 코드 관리 문제, 
 class URandom
 {
+    // member data
+    // 동작 + 상태를 가지는 것 >> 즉 멤버를 가지는 것임.
     public:
         int operator() ()
         {
