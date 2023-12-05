@@ -69,6 +69,10 @@
         "array": "cpp",
         "condition_variable": "cpp",
         "future": "cpp",
-        "numbers": "cpp"
+        "numbers": "cpp",
+        "deque": "cpp",
+        "ranges": "cpp",
+        "span": "cpp",
+        "stack": "cpp"
     }
 }
