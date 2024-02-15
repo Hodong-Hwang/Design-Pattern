@@ -1,0 +1,2 @@
+// C++ examle bridge.
+
